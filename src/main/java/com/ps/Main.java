@@ -113,21 +113,22 @@ public class Main {
             String input;
             System.out.println("Here are our animals. . .");
 
+            while(animals.size() == 0) {
+                while ((input = bufferedReader.readLine()) != null) {
 
-//            while((input = bufferedReader.readLine()) != null){
-//
-//                String[] animalsArr = input.split("\\|");
-//
-//                String animalName = animalsArr[0];
-//                String animalType = animalsArr[1];
-//                int animalAge = Integer.parseInt(animalsArr[2]);
-//                String animalOrigin = animalsArr[3];
-//                boolean isAnimalDisplayed = Boolean.parseBoolean(animalsArr[4]);
-//
-//                Animal animal = new Animal(animalName, animalType, animalAge, animalOrigin, isAnimalDisplayed);
-//
-//                animals.add(animal);
-//            }
+                    String[] animalsArr = input.split("\\|");
+
+                    String animalName = animalsArr[0];
+                    String animalType = animalsArr[1];
+                    int animalAge = Integer.parseInt(animalsArr[2]);
+                    String animalOrigin = animalsArr[3];
+                    boolean isAnimalDisplayed = Boolean.parseBoolean(animalsArr[4]);
+
+                    Animal animal = new Animal(animalName, animalType, animalAge, animalOrigin, isAnimalDisplayed);
+
+                    animals.add(animal);
+                }
+            }
 
 
         } catch(Exception e){
