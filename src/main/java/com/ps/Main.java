@@ -113,7 +113,7 @@ public class Main {
             String input;
             System.out.println("Here are our animals. . .");
 
-            while(animals.size() == 0) {
+
                 while ((input = bufferedReader.readLine()) != null) {
 
                     String[] animalsArr = input.split("\\|");
@@ -126,9 +126,9 @@ public class Main {
 
                     Animal animal = new Animal(animalName, animalType, animalAge, animalOrigin, isAnimalDisplayed);
 
-                    animals.add(animal);
+                   // animals.add(animal);
                 }
-            }
+
 
 
         } catch(Exception e){
@@ -236,16 +236,36 @@ public class Main {
     }
 
     public static void displayPubliclyAvailable(){
-        System.out.println("display publicly available");
+
+        for(int i = 0; i < animals.size(); i++){
+            Animal a = animals.get(i);
+            if(a.isPubliclyAvailable()) {
+            System.out.printf("%s  %s  %d  %s %b \n", a.getName(), a.getType(), a.getAge(), a.getOrigin(), a.isPubliclyAvailable() ); }
+        }
+
     }
     public static void searchByName(){
-        System.out.println("Search by name");
+        System.out.print("Enter the name of the animal you are looking for:");
+        String animalName = inputScanner.nextLine();
+
+        for(int i = 0; i < animals.size(); i++){
+            Animal a = animals.get(i);
+            if(a.getName().equals(animalName)) {
+                System.out.printf("%s  %s  %d  %s %b \n", a.getName(), a.getType(), a.getAge(), a.getOrigin(), a.isPubliclyAvailable() ); }
+        }
     }
     public static void searchByType(){
-        System.out.println("Search by type");
+        System.out.print("Enter the type of animal you are searching for: ");
+        String animalType = inputScanner.nextLine();
+
+        for(int i = 0; i < animals.size(); i++){
+            Animal a = animals.get(i);
+            if(a.getType().equals(animalType)) {
+                System.out.printf("%s  %s  %d  %s %b \n", a.getName(), a.getType(), a.getAge(), a.getOrigin(), a.isPubliclyAvailable() ); }
+        }
     }
         public static void searchByAgeRange(){
-            System.out.println("Search by age range");
+
         }
     public static void searchByOrigin(){
         System.out.println("Search by origin");
