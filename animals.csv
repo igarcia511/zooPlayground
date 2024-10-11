@@ -1,0 +1,24 @@
+name|type|age|origin|isPubliclyAvailable
+leo|lion|5|Americas|true
+Bella|elephant|10|Africa|true
+Max|tiger|7|Asia|false
+Daisy|giraffe|3|Africa|true
+Rocky|bear|4|North America|false
+Nala|cheetah|5|Africa|true
+Finn|wolf|8|North America|true
+Cleo|leopard|6|Asia|false
+Oscar|zebra|2|Africa|true
+Luna|panda|9|Asia|false
+Tyson|rhino|12|Africa|true
+Bella|kangaroo|4|Australia|true
+Simba|jaguar|5|South America|false
+Koda|koala|7|Australia|true
+Ziggy|hyena|3|Africa|false
+Rex|crocodile|15|Africa|true
+Trixie|flamingo|6|South America|true
+Milo|tortoise|50|Galapagos|false
+Gracie|orangutan|8|Asia|true
+Ollie|sloth|9|South America|true
+Patch|manatee|6|North America|false
+cody|bear|5|americas|true
+george|monkey|8|americas|false
